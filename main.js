@@ -23,6 +23,6 @@ function render(dataArray) {
 
 function filter (data){
     search.addEventListener("input", (el) =>{
-        let searchInput = e
+        let searchInput = e.target.value.tolo
     } )
 }
