@@ -22,5 +22,5 @@ function render(dataArray) {
 }
 
 function filter (data){
-    search.addEventListener(el => )
+    search.addEventListener("input",el => )
 }
