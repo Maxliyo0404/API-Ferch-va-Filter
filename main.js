@@ -23,7 +23,7 @@ function render(dataArray) {
 
 function filter (data){
     search.addEventListener("input", (el) =>{
-        let searchInput = e.target.value.toLowerCase();
+        let searchInput = el.target.value.toLowerCase();
     } )
      let filteredData = data.filter(item => {  
       return item.name.toLowerCase().includes(inputValue) || 
