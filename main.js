@@ -4,7 +4,7 @@ let wrapper = document.getElementById("wrapper");
 fetch("https://699d9b4283e60a406a46e1ba.mockapi.io/Teachers")
   .then(response => response.json())
   .then(data => {
-   console.log(data);
+//    console.log(data);
    
    
   })
