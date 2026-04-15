@@ -9,14 +9,13 @@ fetch("https://699d9b4283e60a406a46e1ba.mockapi.io/Teachers")
   .catch(err => console.error("Xatolik:", err)); /
 
 function render(dataArray) {
-  
-  let html = dataArray.map(el => `
+  let cards = dataArray.map(el => `
     <div class="card" key="${el.id}">
         <img src="${el.avatar}" alt="${el.name}">
         <p>${el.name}</p>
         <a href="#">${new Date(el.createdAt).toLocaleDateString()}</a>
     </div>
-  `).join(""); // Kartochkalar orasida vergul bo'lmasligi uchun ""
+  `).join(""); 
 
-  container.innerHTML = html; // html() emas, shunchaki html
+  container.innerHTML = cards; // html() emas, shunchaki html
 }
