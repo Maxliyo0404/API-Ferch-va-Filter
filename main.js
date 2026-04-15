@@ -21,4 +21,6 @@ function render(dataArray) {
   wrapper.innerHTML = cards;
 }
 
-function
+function filter (data){
+    
+}
