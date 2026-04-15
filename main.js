@@ -23,6 +23,7 @@ function render(dataArray) {
 
 function filter (data){
     search.addEventListener("input", (el) =>{
-        let searchInput = e.target.value.tolo
+        let searchInput = e.target.value.toLowerCase();
     } )
+     function 
 }
