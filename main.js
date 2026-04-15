@@ -4,6 +4,7 @@ let wrapper = document.getElementById("wrapper");
 fetch("https://699d9b4283e60a406a46e1ba.mockapi.io/Teachers")
   .then(response => response.json())
   .then(data => {
-    render(data); 
-    filterInput(data); 
+   console.log(data);
+   
+   
   })
