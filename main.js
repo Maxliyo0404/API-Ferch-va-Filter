@@ -17,5 +17,5 @@ function render(dataArray) {
     </div>
   `).join(""); 
 
-  container.innerHTML = cards; // html() emas, shunchaki html
+  container.innerHTML = cards; 
 }
