@@ -3,20 +3,20 @@ let wrapper = document.getElementById("wrapper");
 
 fetch("https://699d9b4283e60a406a46e1ba.mockapi.io/Teachers")
   .then(response => response.json())
-  .then(datas => {
-   render(datas);
-   
-   
+  .then(data => {
+    render(data);
   })
-  .catch(error("Xatolik kelib chiqdi:", error));
+  .catch(err => console.error("Xatolik:", err)); // To'g'ri catch yozilishi
 
-  function render (datas){
-    let data = datas.map(el => `
-           div class="card" key="${el.id}">
+function render(dataArray) {
+  // Argument nomi dataArray, o'zgaruvchi nomi esa html. Chalkashlik bo'lmaydi.
+  let html = dataArray.map(el => `
+    <div class="card" key="${el.id}">
         <img src="${el.avatar}" alt="${el.name}">
         <p>${el.name}</p>
         <a href="#">${new Date(el.createdAt).toLocaleDateString()}</a>
     </div>
-        `) .join();
-        container.innerHTML = datas();
-  }
+  `).join(""); // Kartochkalar orasida vergul bo'lmasligi uchun ""
+
+  container.innerHTML = html; // html() emas, shunchaki html
+}
