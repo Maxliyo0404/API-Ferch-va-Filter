@@ -19,4 +19,5 @@ fetch("https://699d9b4283e60a406a46e1ba.mockapi.io/Teachers")
         <a href="#">${new Date(el.createdAt).toLocaleDateString()}</a>
     </div>
         `) .joing();
+        conatiner.innerHTML = datas();
   }
