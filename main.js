@@ -25,5 +25,5 @@ function filter (data){
     search.addEventListener("input", (el) =>{
         let searchInput = e.target.value.toLowerCase();
     } )
-     function 
+     let filterdata = data.filter(i)
 }
