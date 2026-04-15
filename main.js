@@ -1,10 +1,9 @@
-let conatiner = document.getElementById("container");
+let container = document.getElementById("container");
 let wrapper = document.getElementById("wrapper");
 
 fetch("https://699d9b4283e60a406a46e1ba.mockapi.io/Teachers")
   .then(response => response.json())
-  .then(data => {
-   console.log(data);
+  .then(datas => {
    render(datas);
    
    
@@ -18,6 +17,6 @@ fetch("https://699d9b4283e60a406a46e1ba.mockapi.io/Teachers")
         <p>${el.name}</p>
         <a href="#">${new Date(el.createdAt).toLocaleDateString()}</a>
     </div>
-        `) .joing();
-        conatiner.innerHTML = datas();
+        `) .join();
+        container.innerHTML = datas();
   }
