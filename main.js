@@ -20,3 +20,5 @@ function render(dataArray) {
 
   wrapper.innerHTML = cards;
 }
+
+function
