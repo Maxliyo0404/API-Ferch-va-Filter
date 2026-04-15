@@ -31,4 +31,5 @@ function filter (data){
     });
 
     render(filteredData); 
+    render(filteredData); 
   };
