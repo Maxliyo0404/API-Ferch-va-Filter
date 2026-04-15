@@ -6,7 +6,7 @@ fetch("https://699d9b4283e60a406a46e1ba.mockapi.io/Teachers")
   .then(data => {
     render(data);
   })
-  .catch(err => console.error("Xatolik:", err)); /
+  .catch(err => console.error("Xatolik:", err)); 
 
 function render(dataArray) {
   let cards = dataArray.map(el => `
@@ -17,5 +17,6 @@ function render(dataArray) {
     </div>
   `).join(""); 
 
-  container.innerHTML = cards; 
+
+  wrapper.innerHTML = cards;
 }
