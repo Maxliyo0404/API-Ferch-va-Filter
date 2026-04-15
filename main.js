@@ -22,5 +22,7 @@ function render(dataArray) {
 }
 
 function filter (data){
-    search.addEventListener("input",el => )
+    search.addEventListener("input", (el) =>{
+        let searchInput = e
+    } )
 }
