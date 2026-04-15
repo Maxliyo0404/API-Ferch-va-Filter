@@ -9,7 +9,7 @@ fetch("https://699d9b4283e60a406a46e1ba.mockapi.io/Teachers")
   .catch(err => console.error("Xatolik:", err)); /
 
 function render(dataArray) {
-  // Argument nomi dataArray, o'zgaruvchi nomi esa html. Chalkashlik bo'lmaydi.
+  
   let html = dataArray.map(el => `
     <div class="card" key="${el.id}">
         <img src="${el.avatar}" alt="${el.name}">
