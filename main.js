@@ -26,6 +26,11 @@ function filter (data){
         let searchInput = e.target.value.toLowerCase();
     } )
      let filterdata = data.filter(item => {
-        
+         return item.name.toLowerCase().includes(inputValue) || 
+             item.createdAt.toLowerCase().includes(inputValue);
+    });
+
+    render(filteredData); 
+  });
      })
 }
