@@ -6,7 +6,7 @@ fetch("https://699d9b4283e60a406a46e1ba.mockapi.io/Teachers")
   .then(data => {
     render(data);
   })
-  .catch(err => console.error("Xatolik:", err)); // To'g'ri catch yozilishi
+  .catch(err => console.error("Xatolik:", err)); /
 
 function render(dataArray) {
   // Argument nomi dataArray, o'zgaruvchi nomi esa html. Chalkashlik bo'lmaydi.
