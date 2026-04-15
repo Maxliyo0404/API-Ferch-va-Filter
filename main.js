@@ -32,4 +32,3 @@ function filter (data){
 
     render(filteredData); 
   });
-}
