@@ -18,5 +18,5 @@ fetch("https://699d9b4283e60a406a46e1ba.mockapi.io/Teachers")
         <p>${el.name}</p>
         <a href="#">${new Date(el.createdAt).toLocaleDateString()}</a>
     </div>
-        `)
+        `) .joing();
   }
