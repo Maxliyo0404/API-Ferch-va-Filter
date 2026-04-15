@@ -25,12 +25,11 @@ function filter (data){
     search.addEventListener("input", (el) =>{
         let searchInput = e.target.value.toLowerCase();
     } )
-     let filterdata = data.filter(item => {
-         return item.name.toLowerCase().includes(inputValue) || 
+     let filteredData = data.filter(item => {  
+      return item.name.toLowerCase().includes(inputValue) || 
              item.createdAt.toLowerCase().includes(inputValue);
     });
 
     render(filteredData); 
   });
-     })
 }
