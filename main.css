@@ -42,5 +42,12 @@ body{
   color: white;
 }
 .form{
-    max-width: 100%;
+       width: 581px;
+        padding: 16px 0;
+        border-radius: 5px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+         background: #0D1D25;
 }
