@@ -5,6 +5,7 @@ fetch("https://699d9b4283e60a406a46e1ba.mockapi.io/Teachers")
   .then(response => response.json())
   .then(data => {
     render(data);
+     render(filteredData); 
   })
   .catch(err => console.error("Xatolik:", err)); 
 
@@ -30,6 +31,6 @@ function filter (data){
             
     });
 
-    render(filteredData); 
+   
     render(filteredData); 
   };
