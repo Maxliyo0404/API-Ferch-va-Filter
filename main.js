@@ -5,7 +5,7 @@ fetch("https://699d9b4283e60a406a46e1ba.mockapi.io/Teachers")
   .then(response => response.json())
   .then(data => {
     render(data);
-     render(filteredData); 
+    let allData = []; 
   })
   .catch(err => console.error("Xatolik:", err)); 
 
@@ -26,7 +26,7 @@ function filter (data){
     search.addEventListener("input", (el) =>{
         let searchInput = el.target.value.toLowerCase();
     } )
-     let filteredData = data.filter(item => {  
+     let filteredData = allData.filter(item => {  
       return item.name.toLowerCase().includes(inputValue)
             
     });
