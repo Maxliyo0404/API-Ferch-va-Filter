@@ -6,7 +6,7 @@ fetch("https://699d9b4283e60a406a46e1ba.mockapi.io/Teachers")
   .then(response => response.json())
   .then(data => {
     allData = data; // Ma'lumotni saqlab qo'yamiz
-    render(allData); // Dastlab hammasini chiqaramiz
+    render(allData);
   })
   .catch(err => console.error("Xatolik:", err)); 
 
@@ -20,8 +20,6 @@ function render(dataArray) {
   `).join(""); 
   wrapper.innerHTML = cards;
 }
-
-
 search.addEventListener("input", (e) => {
     let inputValue = e.target.value.toLowerCase(); 
     
