@@ -23,7 +23,7 @@ function render(dataArray) {
 
 // Qidiruv funksiyasini alohida yozamiz
 search.addEventListener("input", (e) => {
-    let inputValue = e.target.value.toLowerCase(); // Foydalanuvchi yozgan matn
+    let inputValue = e.target.value.toLowerCase(); 
     
 
     let filteredData = allData.filter(item => {  
