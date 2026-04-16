@@ -14,8 +14,8 @@ function render(dataArray) {
   let cards = dataArray.map(el => `
     <div class="card">
         <img class="img"  src="${el.avatar}" alt="${el.name}">
-        <p class="card">${el.name}</p>
-        <a class="card" href="#">${new Date(el.createdAt).toLocaleDateString()}</a>
+        <p class="text">${el.name}</p>
+        <a class="data" href="#">${new Date(el.createdAt).toLocaleDateString()}</a>
     </div>
   `).join(""); 
   wrapper.innerHTML = cards;
