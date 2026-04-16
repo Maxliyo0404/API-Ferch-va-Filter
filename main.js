@@ -21,7 +21,7 @@ function render(dataArray) {
   wrapper.innerHTML = cards;
 }
 
-// Qidiruv funksiyasini alohida yozamiz
+
 search.addEventListener("input", (e) => {
     let inputValue = e.target.value.toLowerCase(); 
     
