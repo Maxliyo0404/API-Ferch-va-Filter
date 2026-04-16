@@ -1,5 +1,5 @@
 let wrapper = document.getElementById("wrapper");
-let search = document.getElementById("search"); // HTML-da id="search" bo'lgan input bo'lishi shart
+let search = document.getElementById("input"); // HTML-da id="search" bo'lgan input bo'lishi shart
 let allData = []; 
 
 fetch("https://699d9b4283e60a406a46e1ba.mockapi.io/Teachers")
