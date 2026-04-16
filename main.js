@@ -26,8 +26,8 @@ function filter (data){
         let searchInput = el.target.value.toLowerCase();
     } )
      let filteredData = data.filter(item => {  
-      return item.name.toLowerCase().includes(inputValue) || 
-             item.createdAt.toLowerCase().includes(inputValue);
+      return item.name.toLowerCase().includes(inputValue)
+            
     });
 
     render(filteredData); 
