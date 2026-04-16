@@ -41,3 +41,6 @@ body{
   line-height: 23px;
   color: white;
 }
+.form{
+    max-width: 100%;
+}
