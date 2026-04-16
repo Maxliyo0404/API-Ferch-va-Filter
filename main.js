@@ -25,7 +25,7 @@ function render(dataArray) {
 search.addEventListener("input", (e) => {
     let inputValue = e.target.value.toLowerCase(); // Foydalanuvchi yozgan matn
     
-    // Asosiy ma'lumotlar (allData) ichidan qidiramiz
+
     let filteredData = allData.filter(item => {  
         return item.name.toLowerCase().includes(inputValue);
     });
