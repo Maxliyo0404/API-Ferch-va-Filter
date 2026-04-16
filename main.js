@@ -5,7 +5,7 @@ fetch("https://699d9b4283e60a406a46e1ba.mockapi.io/Teachers")
   .then(response => response.json())
   .then(data => {
     render(data);
-    let allData = []; 
+    allData = data; 
   })
   .catch(err => console.error("Xatolik:", err)); 
 
