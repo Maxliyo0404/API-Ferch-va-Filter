@@ -32,7 +32,6 @@ body{
     width: 90%;
     max-height: 60%;
     border-radius: 20px;
-    margin-bottom: 15px;
     &:hover{
         transform: scale(0.9);
     }
@@ -48,7 +47,7 @@ body{
     font-size: 20px;
   line-height: 23px;
   color: white;
-text-decoration: none;
+ text-decoration: none;
 }
 .form{
        width: 681px;
@@ -90,7 +89,7 @@ text-decoration: none;
         margin: 0 auto;
         box-shadow:1px 1px 10px rgb(231, 220, 220); ;
         border-radius: 30px;
-        font-weight: 500;
+        font-weight: 800;
         font-size: 38px;
         line-height:140%;
         margin-bottom:30px ;
@@ -109,14 +108,36 @@ text-decoration: none;
         width: 100%;
        }
     }
-    @media(max-width:760px){
+    @media(max-width:660px){
        .wrapper{
-         grid-template-columns: repeat(3, 1fr);
+         grid-template-columns: repeat(2, 1fr);
        } 
        .form{
         width: 100%;
        }
        .title{
         width: 100%;
+        font-size: 25px;
        }
+       .text{
+         font-size: 25px;
+    }
+    }
+    @media(max-width:460px){
+       .wrapper{
+         grid-template-columns: 1fr;
+       } 
+       .card{
+        padding: 5px;
+       }
+       .form{
+        width: 100%;
+       }
+       .title{
+        width: 100%;
+        font-size: 23px;
+       }
+       .text{
+         font-size: 25px;
+    }
     }
