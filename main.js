@@ -13,7 +13,7 @@ fetch("https://699d9b4283e60a406a46e1ba.mockapi.io/Teachers")
 function render(dataArray) {
   let cards = dataArray.map(el => `
     <div class="card">
-        <img class=""  src="${el.avatar}" alt="${el.name}">
+        <img class="img"  src="${el.avatar}" alt="${el.name}">
         <p class="card">${el.name}</p>
         <a class="card" href="#">${new Date(el.createdAt).toLocaleDateString()}</a>
     </div>
