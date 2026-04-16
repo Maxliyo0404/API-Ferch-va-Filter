@@ -98,3 +98,25 @@ text-decoration: none;
             transform: scale(0.8);
         }
     }
+    @media(max-width:760px){
+       .wrapper{
+         grid-template-columns: repeat(3, 1fr);
+       } 
+       .form{
+        width: 100%;
+       }
+       .title{
+        width: 100%;
+       }
+    }
+    @media(max-width:760px){
+       .wrapper{
+         grid-template-columns: repeat(3, 1fr);
+       } 
+       .form{
+        width: 100%;
+       }
+       .title{
+        width: 100%;
+       }
+    }
